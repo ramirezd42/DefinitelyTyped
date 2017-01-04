@@ -156,6 +156,7 @@ declare namespace Knex {
     interface Table {
         (tableName: string): QueryBuilder;
         (callback: Function): QueryBuilder;
+        (raw: Raw): QueryBuilder;
     }
 
     interface Distinct extends ColumnNameQueryBuilder {
